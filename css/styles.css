@@ -11,6 +11,25 @@ button, input, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+#slide-indicator{
+    border-radius: 100%;
+    width: 11px;
+    height: 11px;
+    background-color:#DDDDDD;
+    opacity: 1;
+}
+
+#slide-indicator.active{
+    border-radius: 100%;
+    width: 11px;
+    height: 11px;
+    background-color:#666666;
+}
+
+.leilo-text-color{
+    color: #57C3EE;
+}
+
 .leilo-button-white{
     background-color: white;
     transition: all 1s;
@@ -36,6 +55,8 @@ button, input, input[type="submit"], input[type="reset"] {
     
 }
 
+
+/* banner section*/
 .scrolling-banner{
     height: 33px;
     overflow: hidden;
@@ -64,7 +85,10 @@ button, input, input[type="submit"], input[type="reset"] {
     }
     
 }
+/* banner section */
 
+
+/* header logo section */
 .header-logo{
     background-color: #57C3EE;
     
@@ -73,7 +97,10 @@ button, input, input[type="submit"], input[type="reset"] {
 .leilo-logo{
     width:20%;
 }
+/* header logo section */
 
+
+/* Header advertisement section */
 .cans-advertisement{
     background-image: url("../images/headerImages.png");
     background-size: 100% 100%;
@@ -99,7 +126,10 @@ button, input, input[type="submit"], input[type="reset"] {
     font-size: 18px;
     font-weight: 800;
 }
+/* Header advertisement section */
 
+
+/* What's inside section */
 .whats-inside-section{
     background-color: #CFF4FF;
     padding-bottom: 2em;
@@ -116,10 +146,6 @@ button, input, input[type="submit"], input[type="reset"] {
 
 .whats-inside-ingredient-label{
     margin:0;
-}
-
-.leilo-text-color{
-    color: #57C3EE;
 }
 
 .ingredient-image{
@@ -143,7 +169,10 @@ button, input, input[type="submit"], input[type="reset"] {
     margin: 0 auto;
 
 }
+/* What's inside section */
 
+
+/* publication section */
 .publication-quotes{
     background-color: #57C3EE;
 }
@@ -152,28 +181,33 @@ button, input, input[type="submit"], input[type="reset"] {
     font-size: 22px;
     font-weight: 700;
     font-family: Montserrat;
+    min-height: 80px;
     height: 50%;
 }
 
-#slide-indicator{
-    border-radius: 100%;
-    width: 11px;
-    height: 11px;
-    background-color:#DDDDDD;
-    opacity: 1;
+.publication-quote-dash{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Montserrat;
 }
 
-#slide-indicator.active{
-    border-radius: 100%;
-    width: 11px;
-    height: 11px;
-    background-color:#666666;
+.publication-logo-container{
+    min-height: 60px;
+    height: 150%;
 }
 
 #publication-quotes-carousel-indicators-position{
     bottom:-8px;
 }
+/* publication section */
 
+
+.baby-blue-container{
+    background-color: #CFF4FF;
+}
+
+
+/* variety pack section */
 .variety-pack-content{
     color: #57C3EE;
     position: relative;
@@ -232,7 +266,6 @@ input[type=radio]:checked + .order-choice{
     font-size: 18px;
 }
 
-
 .add-to-cart-button{
     border-radius: 21px;
     font-size: 14px;
@@ -240,12 +273,35 @@ input[type=radio]:checked + .order-choice{
     width: 210px;
     height: 38px;
 }
+/* variety pack section */
 
 
-.baby-blue-container{
-   background-color: #CFF4FF;
+/* testimonial section */
+.testimonial-image{
+    width:120px;
+    height: 120px;
+    object-fit: cover;
 }
 
+.testimonial-text{
+    height: 170px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #3DB8E9;
+}
+
+.testimonials-shop-button{
+    height: 38px;
+    width: 70%;
+    max-width: 195px;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 21px;
+}
+/* testimonial section */
+
+
+/* flavors section */
 .flavors-section h2{
     font-weight: 800;
     font-size: 24px;
@@ -255,6 +311,11 @@ input[type=radio]:checked + .order-choice{
 .flavors-button{
     width: 30%;
     max-width: 100px;
+    transition: all 1s;
+}
+
+.flavors-button:hover{
+    background-color: white;
 }
 
 .flavors-section button img{
@@ -264,22 +325,27 @@ input[type=radio]:checked + .order-choice{
 
 .lemon-button{
     background-color: #FFE8A4;
+    border: solid 3px #FFE8A4;
 }
 
 .tango-button{
     background-color: #FFD4A0;
+    border: solid 3px #FFD4A0;
 }
 
 .raspberry-button{
     background-color: #F4DADA;
+    border: solid 3px #F4DADA;
 }
 
 .blackberry-button{
     background-color: #D8DCF2;
+    border: solid 3px #D8DCF2;
 }
 
 .lite-button{
     background-color: #FAD99B;
+    border: solid 3px #FAD99B;
 }
 
 .shop-all-button{
@@ -290,7 +356,10 @@ input[type=radio]:checked + .order-choice{
     width: 75%;
     max-width: 195px;
 }
+/* flavors section */
 
+
+/* contact form section */
 .contact-form-section{
     background-color: #57C3EE;
 }
@@ -319,28 +388,6 @@ input[type=radio]:checked + .order-choice{
     color: #57C3EE;
 }
 
-.testimonial-image{
-    width:120px;
-    height: 120px;
-    object-fit: cover;
-}
-
-.testimonial-text{
-    height: 170px;
-    font-size: 17px;
-    font-weight: 600;
-    color: #3DB8E9;
-}
-
-.testimonials-shop-button{
-    height: 38px;
-    width: 70%;
-    max-width: 195px;
-    font-weight: 800;
-    font-size: 18px;
-    border-radius: 21px;
-}
-
 .sign-me-up-button{
     background-color: white;
     transition: all 1s;
@@ -352,17 +399,25 @@ input[type=radio]:checked + .order-choice{
     color: white;
     border: solid 3px white;
 }
+/* contact form section */
 
-/* Changing placeholder text in different browsers */
+
+footer{
+    background-color: #CFF4FF;
+    height: 500px;
+}
+
+
+/* Changing input placeholder text in different browsers */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-color: white;
+    color: white;
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-color: white;
+    color: white;
 }

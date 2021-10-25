@@ -70,6 +70,10 @@ button, input, input[type="submit"], input[type="reset"] {
     
 }
 
+.leilo-logo{
+    width:20%;
+}
+
 .cans-advertisement{
     background-image: url("../images/headerImages.png");
     background-size: 100% 100%;

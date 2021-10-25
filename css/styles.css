@@ -96,10 +96,6 @@ button, input, input[type="submit"], input[type="reset"] {
     font-weight: 800;
 }
 
-
-
-
-
 .whats-inside-section{
     background-color: #CFF4FF;
     padding-bottom: 2em;
@@ -152,6 +148,7 @@ button, input, input[type="submit"], input[type="reset"] {
     font-size: 22px;
     font-weight: 700;
     font-family: Montserrat;
+    height: 50%;
 }
 
 #slide-indicator{
@@ -245,12 +242,6 @@ input[type=radio]:checked + .order-choice{
    background-color: #CFF4FF;
 }
 
-
-
-#carousel-indicator{
-    background-color: red;
-}
-
 .flavors-section h2{
     font-weight: 800;
     font-size: 24px;
@@ -296,7 +287,6 @@ input[type=radio]:checked + .order-choice{
     max-width: 195px;
 }
 
-
 .contact-form-section{
     background-color: #57C3EE;
 }
@@ -332,7 +322,7 @@ input[type=radio]:checked + .order-choice{
 }
 
 .testimonial-text{
-    height: 150px;
+    height: 170px;
     font-size: 17px;
     font-weight: 600;
     color: #3DB8E9;
@@ -359,15 +349,11 @@ input[type=radio]:checked + .order-choice{
     border: solid 3px white;
 }
 
-
-
-
-
-/* Changing input placeholder color on different browsers */
+/* Changing placeholder text in different browsers */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; /* Firefox */
-  }
+}
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
 color: white;
@@ -376,8 +362,3 @@ color: white;
 ::-ms-input-placeholder { /* Microsoft Edge */
 color: white;
 }
-
-
-
-
-

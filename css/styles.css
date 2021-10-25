@@ -1,1 +1,383 @@
+body{
+    font-family:Montserrat;
+}
+button, input, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.leilo-button-white{
+    background-color: white;
+    transition: all 1s;
+
+}
+
+.leilo-button-white:hover{
+    background-color: #57C3EE;
+    color: white;
+    
+}
+
+.leilo-button-blue{
+    background-color: #57C3EE;
+    color: white;
+    transition: all 1s;
+    border: 3px solid #57C3EE;
+}
+
+.leilo-button-blue:hover{
+    background-color: white;
+    color: #57C3EE;
+    
+}
+
+.scrolling-banner{
+    height: 33px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-banner p{
+    font-weight: 600;
+    font-size: 14px;
+    color: #57C3EE;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    animation: scrolling-text 8s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scrolling-text 
+{
+    0%{
+        transform: translateX(100vw) translateY(-50%);
+    }
+    100%{
+        transform: translateX(-100vw) translateY(-50%);
+        top: 50%;   
+    }
+    
+}
+
+.header-logo{
+    background-color: #57C3EE;
+    
+}
+
+.cans-advertisement{
+    background-image: url("../images/headerImages.png");
+    background-size: 100% 100%;
+    padding-bottom: 55%;
+    
+    
+}
+
+.cans-advertisement-text{
+    font-family:Montserrat;
+    font-weight: 800;
+}
+
+.trademark{
+    font-size:12px;
+    
+}
+
+.cans-advertisement button{
+    border-radius: 21px;
+    width:194px;
+    height: 34px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+
+
+
+.whats-inside-section{
+    background-color: #CFF4FF;
+    padding-bottom: 2em;
+}
+
+.whats-inside-title{
+    font-weight: 700;
+}
+
+.whats-inside-text{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.whats-inside-ingredient-label{
+    margin:0;
+}
+
+.leilo-text-color{
+    color: #57C3EE;
+}
+
+.ingredient-image{
+    width:65%;
+}
+
+.l-theanine-image{
+    width:50%;
+}
+
+.whats-inside-button{
+    width:180px;
+    height: 34px;
+    border-radius: 21px;
+    background-color: #57C3EE;
+    font-size: 16px;
+    font-weight: 900;
+    bottom:-17px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+.publication-quotes{
+    background-color: #57C3EE;
+}
+
+.publication-quote{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+#slide-indicator{
+    border-radius: 100%;
+    width: 11px;
+    height: 11px;
+    background-color:#DDDDDD;
+    opacity: 1;
+}
+
+#slide-indicator.active{
+    border-radius: 100%;
+    width: 11px;
+    height: 11px;
+    background-color:#666666;
+}
+
+#publication-quotes-carousel-indicators-position{
+    bottom:-8px;
+}
+
+.variety-pack-content{
+    color: #57C3EE;
+    position: relative;
+    z-index: 1;
+}
+
+.variety-pack-content h1{
+    color: #57C3EE;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.variety-pack-content p{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.star{
+    width:17px;
+}
+
+.variety-pack-content div p{
+    margin-bottom: 0;
+    margin-left: .5em;
+}
+
+.variety-pack-content-input{
+    border: solid 3px #57C3EE;
+    border-radius: 21px;
+    width: 210px;
+    height: 38px;
+}
+
+.order-choice{
+    background-color: white;
+    color: #57C3EE;
+    border-radius: 21px;
+    transition: all 1s;
+}
+
+input[type=radio]:checked + .order-choice{
+    background-color: #57C3EE;
+    color: white;
+}
+
+#variety-pack-carousel-indicators-positon{
+    z-index: 1000;
+    bottom:-55px;
+}
+
+#units{
+    font-size: 8px;
+}
+
+.variety-pack-content-input button{
+    font-size: 18px;
+}
+
+
+.add-to-cart-button{
+    border-radius: 21px;
+    font-size: 14px;
+    font-weight: 900;
+    width: 210px;
+    height: 38px;
+}
+
+
+.baby-blue-container{
+   background-color: #CFF4FF;
+}
+
+
+
+#carousel-indicator{
+    background-color: red;
+}
+
+.flavors-section h2{
+    font-weight: 800;
+    font-size: 24px;
+    color: #3DB8E9
+}
+
+.flavors-button{
+    width: 30%;
+    max-width: 100px;
+}
+
+.flavors-section button img{
+    width: 80%;
+    max-width: 70px;
+}
+
+.lemon-button{
+    background-color: #FFE8A4;
+}
+
+.tango-button{
+    background-color: #FFD4A0;
+}
+
+.raspberry-button{
+    background-color: #F4DADA;
+}
+
+.blackberry-button{
+    background-color: #D8DCF2;
+}
+
+.lite-button{
+    background-color: #FAD99B;
+}
+
+.shop-all-button{
+    border-radius: 21px;
+    height: 39px;
+    font-weight: 900;
+    font-size: 18px;
+    width: 75%;
+    max-width: 195px;
+}
+
+
+.contact-form-section{
+    background-color: #57C3EE;
+}
+
+.contact-form-section h2{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.contact-form-section input{
+    border: 3px solid white;
+    border-radius: 26px;
+    width:85%;
+    max-width: 220px;
+    height: 38px;
+    text-align: center;
+}
+
+.contact-form-section button{
+    font-weight: 800;
+    font-size: 18px;
+    height: 39px;
+    width: 70%;
+    max-width: 195px;
+    border-radius: 21px;
+    color: #57C3EE;
+}
+
+.testimonial-image{
+    width:120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.testimonial-text{
+    height: 150px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #3DB8E9;
+}
+
+.testimonials-shop-button{
+    height: 38px;
+    width: 70%;
+    max-width: 195px;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 21px;
+}
+
+.sign-me-up-button{
+    background-color: white;
+    transition: all 1s;
+    border: solid 3px white;
+}
+
+.sign-me-up-button:hover{
+    background-color: #3DB8E9;
+    color: white;
+    border: solid 3px white;
+}
+
+
+
+
+
+/* Changing input placeholder color on different browsers */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: white;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+color: white;
+}
+
+
+
+
 

@@ -11,6 +11,11 @@ button, input, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
 #slide-indicator{
     border-radius: 100%;
     width: 11px;
@@ -56,6 +61,8 @@ button, input, input[type="submit"], input[type="reset"] {
 }
 
 
+
+
 /* banner section*/
 .scrolling-banner{
     height: 33px;
@@ -97,21 +104,61 @@ button, input, input[type="submit"], input[type="reset"] {
 .leilo-logo{
     width:20%;
 }
+
+@media(min-width: 840px){
+    .leilo-logo{
+        width:7%;
+    }
+    
+}
+
+@media (max-width:839px) and (min-width: 550px) {
+    .leilo-logo{
+        width:9%;
+    }
+    
+}
+
+@media (max-width:549px) and (min-width: 340px) {
+    .leilo-logo{
+        width:12%;
+    }
+    
+}
+
+
 /* header logo section */
 
 
 /* Header advertisement section */
 .cans-advertisement{
     background-image: url("../images/headerImages.png");
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     padding-bottom: 55%;
-    
     
 }
 
 .cans-advertisement-text{
     font-family:Montserrat;
     font-weight: 800;
+}
+
+/* This media query not working for some reason */
+@media(min-width: 840px){
+    .cans-advertisement-text{
+        font-size: 34px;
+    }
+
+    .cans-advertisement button{
+        border-radius: 21px;
+        width:1%;
+        height: 2px;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
 }
 
 .trademark{
@@ -130,6 +177,10 @@ button, input, input[type="submit"], input[type="reset"] {
 
 
 /* What's inside section */
+.whats-inside{
+    max-width: 1024px;
+}
+
 .whats-inside-section{
     background-color: #CFF4FF;
     padding-bottom: 2em;
@@ -137,6 +188,11 @@ button, input, input[type="submit"], input[type="reset"] {
 
 .whats-inside-title{
     font-weight: 700;
+}
+
+.whats-inside-info-text{
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .whats-inside-text{
@@ -169,6 +225,20 @@ button, input, input[type="submit"], input[type="reset"] {
     margin: 0 auto;
 
 }
+
+@media(max-width: 340px) {
+    .whats-inside-text{
+        font-size: 10px;
+    }
+}
+
+@media(min-width: 375px) {
+    .whats-inside-text{
+        font-size: 14px;
+    }
+}
+
+
 /* What's inside section */
 
 
@@ -178,11 +248,12 @@ button, input, input[type="submit"], input[type="reset"] {
 }
 
 .publication-quote{
+    min-height: 130px;
+    height: 50%;
     font-size: 22px;
     font-weight: 700;
     font-family: Montserrat;
-    min-height: 80px;
-    height: 50%;
+    
 }
 
 .publication-quote-dash{
@@ -198,6 +269,10 @@ button, input, input[type="submit"], input[type="reset"] {
 
 #publication-quotes-carousel-indicators-position{
     bottom:-8px;
+}
+
+.us-weekly-logo{
+    width:30%;
 }
 /* publication section */
 
@@ -225,6 +300,11 @@ button, input, input[type="submit"], input[type="reset"] {
     font-size: 12px;
 }
 
+#variety-pack-text{
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .star{
     width:17px;
 }
@@ -234,11 +314,44 @@ button, input, input[type="submit"], input[type="reset"] {
     margin-left: .5em;
 }
 
+.variety-pack-image-container{
+    height: 240px;
+}
+
+.variety-pack-image{
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+    
+}
+
+
 .variety-pack-content-input{
     border: solid 3px #57C3EE;
     border-radius: 21px;
-    width: 210px;
+    width: 240px;
     height: 38px;
+}
+
+.variety-pack-content-counter{
+    border: solid 3px grey;
+    background-color: grey;
+    color: lightgray;
+    opacity: 0.5;
+    border-radius: 21px;
+    width: 240px;
+    height: 38px;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.variety-pack-content-counter.active{
+    border: solid 3px #57C3EE;
+    background-color: white;
+    color: #57C3EE;
+    opacity: 1;
+    pointer-events: all;
 }
 
 .order-choice{
@@ -266,11 +379,12 @@ input[type=radio]:checked + .order-choice{
     font-size: 18px;
 }
 
+
 .add-to-cart-button{
     border-radius: 21px;
     font-size: 14px;
     font-weight: 900;
-    width: 210px;
+    width: 240px;
     height: 38px;
 }
 /* variety pack section */
@@ -308,9 +422,13 @@ input[type=radio]:checked + .order-choice{
     color: #3DB8E9
 }
 
-.flavors-button{
-    width: 30%;
+.flavors-anchor{
+    width:30%;
     max-width: 100px;
+}
+
+.flavors-button{
+    width: 100%;
     transition: all 1s;
 }
 

@@ -81,6 +81,27 @@ a, a:hover, a:focus, a:active{
     white-space: nowrap;
 }
 
+@media(min-width: 840px){
+    .scrolling-banner p{
+        font-weight: 600;
+        font-size: 4vh;
+        color: #57C3EE;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        animation: scrolling-text 8s linear infinite;
+        white-space: nowrap;
+    }
+
+    .scrolling-banner{
+        height: 8vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+}
+
 @keyframes scrolling-text 
 {
     0%{
@@ -107,24 +128,14 @@ a, a:hover, a:focus, a:active{
 
 @media(min-width: 840px){
     .leilo-logo{
-        width:7%;
-    }
-    
+        width:7vw;
+    }   
+
+
 }
 
-@media (max-width:839px) and (min-width: 550px) {
-    .leilo-logo{
-        width:9%;
-    }
-    
-}
 
-@media (max-width:549px) and (min-width: 340px) {
-    .leilo-logo{
-        width:12%;
-    }
-    
-}
+
 
 
 /* header logo section */
@@ -143,36 +154,75 @@ a, a:hover, a:focus, a:active{
 .cans-advertisement-text{
     font-family:Montserrat;
     font-weight: 800;
-}
-
-/* This media query not working for some reason */
-@media(min-width: 840px){
-    .cans-advertisement-text{
-        font-size: 34px;
-    }
-
-    .cans-advertisement button{
-        border-radius: 21px;
-        width:1%;
-        height: 2px;
-        font-size: 18px;
-        font-weight: 800;
-    }
+    font-size: 5vw;
     
 }
 
 .trademark{
-    font-size:12px;
+    font-size:2vw;
+    font-family:Montserrat;
+    font-weight: 800;
     
 }
 
 .cans-advertisement button{
-    border-radius: 21px;
-    width:194px;
-    height: 34px;
-    font-size: 18px;
+    border-radius: 70px;
+    width:20vw;
+    height: 10vh;
+    font-size: 2vw;
     font-weight: 800;
 }
+
+/* This media query not working for some reason */
+/* @media(min-width: 2101px){
+    .cans-advertisement-text{
+        font-size: 120px;
+        margin-top: 2em;
+    }
+
+    .cans-advertisement button{
+        border-radius: 70px;
+        width:20%;
+        height: 100px;
+        font-size: 50px;
+        font-weight: 800;
+        margin-top: 2em;
+    }   
+
+    .trademark{
+        font-family:Montserrat;
+        font-weight: 800;
+        font-size: 50px;
+        
+    }
+    
+}
+
+@media(max-width: 2100px){
+
+    .cans-advertisement-text{
+        font-size: 80px;
+        margin-top: 2em;
+    }
+
+    .cans-advertisement button{
+        border-radius: 70px;
+        width:25%;
+        height: 100px;
+        font-size: 50px;
+        font-weight: 800;
+        margin-top: 2em;
+    }   
+
+    .trademark{
+        font-family:Montserrat;
+        font-weight: 800;
+        font-size: 50px;
+        
+    }
+    
+} */
+
 /* Header advertisement section */
 
 

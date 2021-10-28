@@ -687,7 +687,6 @@ a, a:hover, a:focus, a:active{
     border: solid 3px #57C3EE;
     border-radius: 21px;
     width: 240px;
-    height: 38px;
 }
 
 .variety-pack-content-counter{
@@ -697,7 +696,6 @@ a, a:hover, a:focus, a:active{
     opacity: 0.5;
     border-radius: 21px;
     width: 240px;
-    height: 38px;
     pointer-events: none;
     transition: all 1s;
 }
@@ -741,8 +739,42 @@ input[type=radio]:checked + .order-choice{
     font-size: 14px;
     font-weight: 900;
     width: 240px;
-    height: 38px;
 }
+
+@media(min-width:1025px){
+    .variety-pack-content-input{
+        width:17vw;
+        border-radius: 70px;
+        font-weight: 800;
+        font-size: 2vw;
+        border-radius: 71px;
+    }
+
+    .variety-pack-content-counter{
+        width:17vw;
+        border-radius: 70px;
+        font-weight: 800;
+        border-radius: 71px;
+    }
+
+    .variety-pack-content-input button{
+        font-size: 3vw;
+    }
+
+    .variety-pack-content-input button{
+        font-size: 2vw;
+    }
+
+    .add-to-cart-button{
+        width:17vw;
+        border-radius: 70px;
+        font-weight: 800;
+        font-size: 1.5vw;
+        border-radius: 71px;
+    }
+
+}
+
 
 @media (min-width:700px) and (max-width:800px){
     .variety-pack-container{
@@ -817,6 +849,7 @@ input[type=radio]:checked + .order-choice{
     font-weight: 800;
     font-size: 18px;
     border-radius: 21px;
+    
 }
 
 @media (min-width:1025px){
@@ -837,7 +870,7 @@ input[type=radio]:checked + .order-choice{
         border-radius: 70px;
         font-weight: 800;
         font-size: 2vw;
-        border-radius: 21px;
+        border-radius: 71px;
     }
         
 
@@ -846,6 +879,7 @@ input[type=radio]:checked + .order-choice{
 
 
 /* flavors section */
+
 .flavors-section h2{
     font-weight: 800;
     font-size: 24px;
@@ -855,6 +889,7 @@ input[type=radio]:checked + .order-choice{
 .flavors-anchor{
     width:30%;
     max-width: 100px;
+    margin: .25em;
 }
 
 .flavors-button{
@@ -882,6 +917,7 @@ input[type=radio]:checked + .order-choice{
 }
 
 .raspberry-button{
+    width: 102%;
     background-color: #F4DADA;
     border: solid 3px #F4DADA;
 }
@@ -898,12 +934,47 @@ input[type=radio]:checked + .order-choice{
 
 .shop-all-button{
     border-radius: 21px;
-    height: 39px;
     font-weight: 900;
     font-size: 18px;
     width: 75%;
     max-width: 195px;
 }
+
+@media (min-width:1025px){
+    .shop-all-button{
+        width:17vw;
+        max-width: 2000px;
+        border-radius: 70px;
+        font-weight: 800;
+        font-size: 2vw;
+        border-radius: 71px;
+    }
+
+    .flavors-anchor{
+        width:13%;
+        max-width: 700px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }    
+
+    
+
+    .flavors-section h2{
+        font-weight: 800;
+        font-size: 3vw;
+        color: #3DB8E9
+    }
+
+    .flavors-section{
+        width: 85vw;
+    }
+
+}
+
+@media (min-width:1400px){
+
+}
+
 /* flavors section */
 
 
@@ -947,6 +1018,39 @@ input[type=radio]:checked + .order-choice{
     color: white;
     border: solid 3px white;
 }
+
+@media (min-width:1400px){
+
+    .contact-form-section input{
+        border: 3px solid white;
+        border-radius: 71px;
+        width:18%;
+        max-width: 2000px;
+        height: 60px;
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    .contact-form-section button{
+        font-weight: 800;
+        font-size: 26px;
+        height: 60px;
+        width: 18%;
+        max-width: 2000px;
+        border-radius: 71px;
+        color: #57C3EE;
+    }
+    
+}
+
+@media (min-width:900px){
+    .contact-form-section h2{
+        font-size: 3vw;
+    }
+    
+    
+
+}
 /* contact form section */
 
 footer{
@@ -967,4 +1071,8 @@ footer{
   
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }

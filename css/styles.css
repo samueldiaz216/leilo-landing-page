@@ -1062,7 +1062,7 @@ footer{
 /* Changing input placeholder text in different browsers */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
-    opacity: 1; /* Firefox */
+    opacity:0.5; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -1076,3 +1076,5 @@ footer{
 input:focus::placeholder {
     color: transparent;
 }
+
+

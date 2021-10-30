@@ -686,23 +686,21 @@ a, a:hover, a:focus, a:active{
 
 
 /* variety pack section */
-.variety-pack-container{
-    max-width: 1600px;
-}
 
-.variety-pack-content{
+
+.variety-pack-content1{
     color: #57C3EE;
     position: relative;
     z-index: 1;
 }
 
-.variety-pack-content h1{
+.variety-pack-content1 h1{
     color: #57C3EE;
     font-weight: 900;
     font-size: 28px;
 }
 
-.variety-pack-content p{
+.variety-pack-content1 p{
     font-weight: 600;
     font-size: 12px;
 }
@@ -716,24 +714,14 @@ a, a:hover, a:focus, a:active{
     width:17px;
 }
 
-.variety-pack-content div p{
+.variety-pack-content1 div p{
     margin-bottom: 0;
     margin-left: .5em;
 }
 
 
 
-.variety-pack-image{
-    width: 100%;
-    height: 100%;
-    object-position: 50% 50%;
-    object-fit: cover;
-    
-}
 
-.variety-pack-image-container{
-    height: 90vw;
-}
 
 
 .variety-pack-content-input{
@@ -774,10 +762,6 @@ input[type=radio]:checked + .order-choice{
     color: white;
 }
 
-#variety-pack-carousel-indicators-positon{
-    z-index: 1000;
-    bottom:-55px;
-}
 
 #units{
     font-size: 8px;
@@ -793,6 +777,7 @@ input[type=radio]:checked + .order-choice{
     font-size: 14px;
     font-weight: 900;
     width: 240px;
+    height: 38px;
 }
 
 @media(min-width:1025px){
@@ -819,6 +804,9 @@ input[type=radio]:checked + .order-choice{
         font-size: 2vw;
     }
 
+}
+
+@media(max-width:1750px) and (min-width: 1025px){
     .add-to-cart-button{
         width:17vw;
         border-radius: 70px;
@@ -826,42 +814,26 @@ input[type=radio]:checked + .order-choice{
         font-size: 1.5vw;
         border-radius: 71px;
     }
+}
 
+@media(min-width:1750px) {
+    .add-to-cart-button{
+        width:17vw;
+        border-radius: 70px;
+        font-weight: 800;
+        font-size: 26px;
+        border-radius: 71px;
+    }
 }
 
 
-@media (min-width:700px) and (max-width:800px){
-    .variety-pack-container{
-        padding-right: 2em;
-        padding-left: 2em;
-    }
-    
-}
 
-@media (min-width:801px) and (max-width:2000px){
 
-    .variety-pack-image{
-        width: 100%;
-        height: 100%;
-        object-position: 50% 50%;
-        object-fit: cover;
-        
-    }
 
-    .variety-pack-container{
-        padding-top: 4em;
-        padding-right: 4em;
-        padding-left: 4em;
-        max-width: 1000px;
-    }
-
-    
-
-}
 
 @media (min-width:1200px){
 
-    .variety-pack-content p{
+    .variety-pack-content1 p{
         font-weight: 600;
         font-size: 12px;
     }
@@ -871,7 +843,7 @@ input[type=radio]:checked + .order-choice{
         font-size: 1vw;
     }
 
-    .variety-pack-content h1{
+    .variety-pack-content1 h1{
         color: #57C3EE;
         font-weight: 900;
         font-size: 3vw;
@@ -881,6 +853,65 @@ input[type=radio]:checked + .order-choice{
 
 }
 /* variety pack section */
+
+
+
+
+/*variety-pack section1*/
+
+
+@media(min-width:751px){
+    .variety-pack-container1{
+        display: flex;
+        height: 90vh;
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+
+    .variety-pack-image-container1{
+        height: 90vh;
+    
+    }
+    
+    #variety-pack-carousel1{
+        flex:2;
+        height: 90vh;
+    }
+    
+    .variety-pack-content1{
+        flex:1;
+        height: 90vh;
+    }
+
+
+}
+
+
+
+.variety-pack-image1{
+
+    height: 100%; 
+    width:100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+    
+@media(max-width:750px){
+    #variety-pack-carousel-indicators-positon{
+        z-index: 1000;
+        bottom:-55px;
+    }
+
+    .variety-pack-container1{
+        display: block;
+    }
+
+    .variety-pack-image-container1{
+        height: 40vh;
+    
+    }
+
+}
 
 
 /* testimonial section */

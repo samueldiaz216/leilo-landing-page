@@ -6,7 +6,7 @@ incrementCases=document.querySelector(".increment-cases");
 subscribeRadioButton=document.querySelector(".subscribe");
 oneTimeOrderRadioButton=document.querySelector(".one-time-order");
 counter=document.querySelector(".variety-pack-content-counter");
-buyVarietyPackForm=document.querySelector(".variety-pack-content form");
+buyVarietyPackForm=document.querySelector(".variety-pack-content1 form");
 
 
 addToCartButton=document.createElement("button");

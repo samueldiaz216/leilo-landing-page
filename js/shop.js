@@ -19,7 +19,7 @@ function populateDropdown() {
             handle = "tango-berry";
         } else if (flavor == "raspberry hibiscus") {
             handle = "raspberry-hibiscus";
-        } else if (flavor == "sunset variety") {
+        } else if (flavor == "sunset variety pack") {
             handle = "sunset-variety";
         } else if (flavor == "Leilo hoodie") {
             handle = "unisex-hoodie";

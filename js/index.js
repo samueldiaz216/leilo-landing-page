@@ -1,5 +1,5 @@
-numberOfCases=document.querySelector("#number-of-cases");
-numberOfCasesValue=document.querySelector("#number-of-cases").value;
+numberOfCases=document.querySelector("#quantity");
+numberOfCasesValue=document.querySelector("#quantity").value;
 casesIndicator=document.querySelector(".cases");
 decrementCases=document.querySelector(".decrement-cases");
 incrementCases=document.querySelector(".increment-cases");

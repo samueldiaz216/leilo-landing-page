@@ -714,6 +714,14 @@ a, a:hover, a:focus, a:active{
     width:17px;
 }
 
+.last-star-container{
+    padding:0;
+    width: 13px;
+    overflow: hidden;
+    position:relative;
+    bottom:1px;
+}
+
 .variety-pack-content1 div p{
     margin-bottom: 0;
     margin-left: .5em;

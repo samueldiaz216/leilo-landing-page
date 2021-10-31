@@ -1,13 +1,15 @@
+
 function populateDropdown() {
     client.checkout.fetch($.cookie("checkoutId")).then((checkout) => {
         var discount = 0;
         if (checkout.discountApplications.length > 0) {
             discount = checkout.discountApplications[0].value.percentage;
         }
-
+        alert("kk");
         var handle = "";
         var mq = window.matchMedia( "(max-width: 45em)" );
         var flavor = document.getElementById("flavor-name").innerHTML;
+        
         if (mq.matches) {
             flavor = document.getElementById("flavor-name-mobile").innerHTML;
         }

@@ -405,10 +405,12 @@ a, a:hover, a:focus, a:active{
 @media (min-width:770px){
     .ingredient-image{
         width:47%;
+        max-width:290px;
     }
     
     .l-theanine-image{
         width:37%;
+        max-width:240px;
     }
 }
 
@@ -562,7 +564,9 @@ a, a:hover, a:focus, a:active{
 }
 
 .ingredients{
-    align-items: end;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 @media (min-width: 426px) {

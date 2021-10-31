@@ -15,7 +15,16 @@ addToCartButton.classList.add("add-to-cart-button");
 addToCartButton.classList.add("leilo-button-blue");
 addToCartButton.innerText="add to cart";
 
+selectProductIdInput=document.createElement("input");
+selectProductIdInput.setAttribute("id","selected-product-id");
+selectProductIdInput.setAttribute("value","");
+checkoutIdInput=document.createElement("input");
+checkoutIdInput.setAttribute("id","checkout-id");
+checkoutIdInput.setAttribute("value","");
+
 buyVarietyPackForm.appendChild(addToCartButton);
+buyVarietyPackForm.appendChild(selectProductIdInput);
+buyVarietyPackForm.appendChild(checkoutIdInput);
 
 
 
@@ -35,6 +44,7 @@ subscriptionScript.setAttribute("type", "text/javascript");
 subscriptionScript.setAttribute("src", "https://danjg53usxhfc.cloudfront.net/api/wf-embed-btn.js?b=Leilo");
 
 
+
 addSubscriptionToCartButtonHTML="<a href='https://withfriends.co/Leilo/join?utm_campaign=wf-websitelink'>"+addToCartButton+"</a><script type='text/javascript' src='https://danjg53usxhfc.cloudfront.net/api/wf-embed-btn.js?b=Leilo'></script>";
 
 
@@ -47,12 +57,16 @@ oneTimeOrderRadioButton.addEventListener("click",()=>{
     buyVarietyPackForm.removeChild(addSubscriptionToCartAnchorTag);
     buyVarietyPackForm.removeChild(subscriptionScript);
     buyVarietyPackForm.appendChild(addToCartButton);
+    buyVarietyPackForm.appendChild(selectProductIdInput);
+    buyVarietyPackForm.appendChild(checkoutIdInput);
 })
 
 subscribeRadioButton.addEventListener("click",()=>{
     counter.classList.toggle("active");
     numberOfCasesValue=0;
     casesIndicator.innerText=numberOfCasesValue+" cases";
+    buyVarietyPackForm.removeChild(selectProductIdInput);
+    buyVarietyPackForm.removeChild(checkoutIdInput);
     buyVarietyPackForm.removeChild(addToCartButton);
     buyVarietyPackForm.appendChild(addSubscriptionToCartAnchorTag);
     buyVarietyPackForm.appendChild(subscriptionScript);
@@ -96,16 +110,5 @@ $('#email_signup').submit(function(e){
         success:function(){
         }
     });
-
-    
-    
+   
 });
-
-
-
-
-
-
-
-
-

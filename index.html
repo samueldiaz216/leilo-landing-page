@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -59,7 +61,7 @@
                 from the south pacific.
             </p>
 
-            <div class="ingredients d-flex justify-content-evenly">
+            <div class="ingredients">
                 <div class="text-center w-25">
                     <img class="ingredient-image mb-2" src="images/kava.png" alt="">
                     <p class="whats-inside-text whats-inside-ingredient-label">kava root</p>
@@ -86,58 +88,80 @@
         </div>
     </div>
 
-    <!-- This has to be a carousel -->
+
     <div class="publication-quotes">
-        
-        <div id="publication-quotes-carousel" class="carousel slide" data-bs-ride="carousel">
-            
+
+        <div id="publication-quotes-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators" id="publication-quotes-carousel-indicators-position">
+              <li id="slide-indicator" data-target="#publication-quotes-carousel" data-slide-to="0" class="active"></li>
+              <li id="slide-indicator" data-target="#publication-quotes-carousel" data-slide-to="1"></li>
+              <li id="slide-indicator" data-target="#publication-quotes-carousel" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner p-5">
-              <div class="carousel-item active text-center text-white">
-                <div class="h1 publication-quote d-flex flex-column justify-content-center">
-                    "the market's first ready-to-drink kava beverage."
+                <div class="carousel-item active text-center text-white">
+                  <div class="h1 publication-quote d-flex flex-column justify-content-center">
+                      "the market's first ready-to-drink kava beverage."
+                  </div>
+                  <h3 class="publication-quote-dash">-</h3>
+                  <div class="publication-logo-container w-100 text-center">
+                      <a target="_blank" href="https://www.forbes.com/sites/chelseadavis/2021/08/13/say-hello-to-leilo-the-markets-only--ready-to-drink-kava-beverage/?sh=1f0744211c6d"><img class="forbes-logo" src="images/forbes-logo-white-removebg-preview.png" alt=""></a>
+                  </div>
                 </div>
-                <h3 class="publication-quote-dash">-</h3>
-                <div class="publication-logo-container w-100 text-center">
-                    <a target="_blank" href="https://www.forbes.com/sites/chelseadavis/2021/08/13/say-hello-to-leilo-the-markets-only--ready-to-drink-kava-beverage/?sh=1f0744211c6d"><img class="forbes-logo" src="images/forbes-logo-white-removebg-preview.png" alt=""></a>
+                <div class="carousel-item text-center text-white">
+   
+                  <div class="h1 publication-quote d-flex flex-column justify-content-center">
+                      "lorem ipsum dolor sit, amet consectetur."
+                  </div>
+                  <h3 class="publication-quote-dash">-</h3>
+              
+                  <div class="publication-logo-container w-100 text-center">
+                      <img class="us-weekly-logo" src="images/USWeekly.png" alt="">
+                  </div>
+                </div>
+                <div class="carousel-item text-center text-white">
+                  <div class="h1 publication-quote d-flex flex-column justify-content-center">
+                      "calm is the key to unlocking our full potential, and Leilo is making sure it’s only a can away."
+                  </div>
+                  <h3 class="publication-quote-dash" >-</h3>
+                  <div class="publication-logo-container w-100 text-center">
+                      <a target="_blank" href="https://medium.com/authority-magazine/sol-broady-of-leilo-5-things-you-need-to-create-a-successful-food-or-beverage-brand-ad346f3ffd1a"><img class="medium-logo" src="images/mediumLogo-removebg-preview.png" alt=""></a>   
+                  </div>
                 </div>
               </div>
-              <div class="carousel-item text-center text-white">
- 
-                <div class="h1 publication-quote d-flex flex-column justify-content-center">
-                    "lorem ipsum dolor sit, amet consectetur."
-                </div>
-                <h3 class="publication-quote-dash">-</h3>
-            
-                <div class="publication-logo-container w-100 text-center">
-                    <img class="us-weekly-logo" src="images/USWeekly.png" alt="">
-                </div>
-              </div>
-              <div class="carousel-item text-center text-white">
-                <div class="h1 publication-quote d-flex flex-column justify-content-center">
-                    "calm is the key to unlocking our full potential, and Leilo is making sure it’s only a can away."
-                </div>
-                <h3 class="publication-quote-dash" >-</h3>
-                <div class="publication-logo-container w-100 text-center">
-                    <a target="_blank" href="https://medium.com/authority-magazine/sol-broady-of-leilo-5-things-you-need-to-create-a-successful-food-or-beverage-brand-ad346f3ffd1a"><img class="medium-logo" src="images/mediumLogo-removebg-preview.png" alt=""></a>   
-                </div>
-              </div>
-            </div>
-            <div class="carousel-indicators" id="publication-quotes-carousel-indicators-position">
-                <button type="button" data-bs-target="#publication-quotes-carousel" data-bs-slide-to="0" class="active" id="slide-indicator" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#publication-quotes-carousel" data-bs-slide-to="1" id="slide-indicator" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#publication-quotes-carousel" data-bs-slide-to="2" id="slide-indicator" aria-label="Slide 3"></button>
-            </div>
             
         </div>
+        
 
     </div>
 
     <div class="baby-blue-container d-flex flex-column align-items-center px-3 pt-3 pb-5">
 
+        
+
 
         <div class="variety-pack-container1 my-5">
 
-            <div id="variety-pack-carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div id="variety-pack-carousel1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators" id="variety-pack-carousel-indicators-positon">
+                  <li id="slide-indicator" data-target="#variety-pack-carousel1" data-slide-to="0" class="active"></li>
+                  <li id="slide-indicator" data-target="#variety-pack-carousel1" data-slide-to="1"></li>
+                  <li id="slide-indicator" data-target="#variety-pack-carousel1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner w-100">
+                    <div class="carousel-item active variety-pack-image-container1">
+                        <img class="variety-pack-image1" src="images/carouselCans.png" alt="">
+                    </div>
+                    <div class="carousel-item variety-pack-image-container1">
+                        <img class="variety-pack-image1 " src="images/cans.png" alt="">
+                    </div>
+                    <div class="carousel-item variety-pack-image-container1">
+                        <img class="variety-pack-image1" src="images/carouselCans.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- <div id="variety-pack-carousel1" class="carousel slide" data-bs-ride="carousel">
                 
                 <div class="carousel-inner w-100">
                 <div class="carousel-item active variety-pack-image-container1">
@@ -158,7 +182,7 @@
                 
                 
                 
-            </div>
+            </div> -->
 
             <div class="variety-pack-content1 text-center bg-white mt-0 pt-5 pb-4 px-3">
                 <h1 id="flavor-name" class="mb-4">sunset variety pack</h1> 
@@ -214,8 +238,16 @@
         
 
         <div class="testimonials-section text-center py-5">
-            <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel">
-            
+
+            <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+                
+                <ol class="carousel-indicators" id="testimonials-carousel-indicators-position">
+                  <li id="slide-indicator" data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+                  <li id="slide-indicator" data-target="#testimonials-carousel" data-slide-to="1"></li>
+                  <li id="slide-indicator" data-target="#testimonials-carousel" data-slide-to="2"></li>
+                  <li id="slide-indicator" data-target="#testimonials-carousel" data-slide-to="3"></li>
+                  <li id="slide-indicator" data-target="#testimonials-carousel" data-slide-to="4"></li>
+                </ol>
                 <div class="carousel-inner px-3">
                     <div class="carousel-item active">
                         <img class="testimonial-image rounded-circle mb-4" src="https://images.loox.io/uploads/2021/5/25/NkRzUESY9.jpg" alt=""> 
@@ -238,15 +270,9 @@
                         <p class="testimonial-text">"the BEST beverage on the market! i love the tangoberry flavor because it's the perfect amount of sweet."</p>
                     </div>
                 </div>
-                <div class="carousel-indicators" id="testimonials-carousel-indicators-position">
-                    <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active" id="slide-indicator" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1" id="slide-indicator" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="2" id="slide-indicator" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="3" id="slide-indicator" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="4" id="slide-indicator" aria-label="Slide 5"></button>
-                </div>
                 
             </div>
+            
             <a href="#variety-pack-carousel1"><button class="testimonials-shop-button leilo-button-blue">shop Leilo</button></a>
         </div>
             
@@ -282,7 +308,9 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/cart.js"></script>

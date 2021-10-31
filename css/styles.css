@@ -1,6 +1,7 @@
 body{
     font-family:Montserrat;
 }
+
 button, input, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
@@ -157,24 +158,48 @@ a, a:hover, a:focus, a:active{
 /* header logo section */
 .header-logo{
     background-color: #57C3EE;
-    height:56px;
+    position: relative;
 }
 
 .leilo-logo{
-    height:100%;
+    height:56px;
+    
+}
+
+
+
+.cart-button-container{
+    position: absolute;
+    bottom:0;
+    right:3vw;
+    color:white;
+
+}
+
+
+
+@media(min-width: 1024px){
+
+    .cart-button-container{
+        position: absolute;
+        bottom:0;
+        right:3vw;
+    
+    }
+
 }
 
 @media(min-width: 1440px){
-    .header-logo{
-        background-color: #57C3EE;
+
+    .leilo-logo{
         height:70px;
     }
 
 }
 
 @media(min-width: 2000px){
-    .header-logo{
-        background-color: #57C3EE;
+
+    .leilo-logo{
         height:120px;
     }
 
@@ -253,7 +278,7 @@ a, a:hover, a:focus, a:active{
 }
 
 
-@media(max-width: 2100px){
+@media(max-width: 2100px) and (min-width:1501px){
 
     .cans-advertisement-text{
         margin-top: 1em;
@@ -277,7 +302,7 @@ a, a:hover, a:focus, a:active{
 
 
 
-@media(max-width: 1500px){
+@media(max-width: 1500px) and (min-width:1026px){
 
     .cans-advertisement-text{
         margin-top: 1em;
@@ -299,7 +324,7 @@ a, a:hover, a:focus, a:active{
     
 }
 
-@media(max-width: 1025px){
+@media(max-width: 1025px) and (min-width:801px){
 
     .cans-advertisement-text{
         font-size: 8vw;
@@ -324,7 +349,7 @@ a, a:hover, a:focus, a:active{
 
 }
 
-@media(max-width: 775px){
+@media(max-width: 775px) and (min-width: 426px){
 
     .trademark{
         font-size:2.3vw;
@@ -343,6 +368,10 @@ a, a:hover, a:focus, a:active{
     .cans-advertisement-text{
         font-size: 8vw;
     }   
+
+    .experience{
+        margin-bottom: 0;
+    }
 
     .cans-advertisement button{
         font-size: 6vw;
@@ -731,11 +760,6 @@ a, a:hover, a:focus, a:active{
     margin-left: .5em;
 }
 
-
-
-
-
-
 .variety-pack-content-input{
     border: solid 3px #57C3EE;
     border-radius: 21px;
@@ -864,12 +888,6 @@ input[type=radio]:checked + .order-choice{
     
 
 }
-/* variety pack section */
-
-
-
-
-/*variety-pack section1*/
 
 
 @media(min-width:751px){
@@ -878,21 +896,24 @@ input[type=radio]:checked + .order-choice{
         height: 90vh;
         padding-right: 3em;
         padding-left: 3em;
+        min-height: 500px;
     }
 
     .variety-pack-image-container1{
         height: 90vh;
-    
+        
     }
     
     #variety-pack-carousel1{
         flex:2;
         height: 90vh;
+
     }
     
     .variety-pack-content1{
         flex:1;
         height: 90vh;
+
     }
 
 
@@ -919,11 +940,12 @@ input[type=radio]:checked + .order-choice{
     }
 
     .variety-pack-image-container1{
-        height: 40vh;
+        height: 45vh;
     
     }
 
 }
+/*variety-pack section*/
 
 
 /* testimonial section */

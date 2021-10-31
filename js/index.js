@@ -112,3 +112,28 @@ $('#email_signup').submit(function(e){
     });
    
 });
+
+//Resizing cart button
+const cart = document.querySelector("#i-cart");
+
+if(window.innerWidth>1440){
+    makeCartBig();
+}
+
+window.addEventListener('resize',()=>{
+    if(window.innerWidth>1440){
+        makeCartBig();
+    }else{
+        makeCartSmall();
+    }
+})
+
+function makeCartBig(){
+    cart.setAttribute("width","56");
+    cart.setAttribute("height","56");
+}
+
+function makeCartSmall(){
+    cart.setAttribute("width","36");
+    cart.setAttribute("height","36");
+}

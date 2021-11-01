@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     font-family:Montserrat;
 }
@@ -101,7 +105,7 @@ a, a:hover, a:focus, a:active{
     margin: 0;
     position: absolute;
     top: 50%;
-    animation: scrolling-text 8s linear infinite;
+    animation: scrolling-text 6s linear infinite;
     white-space: nowrap;
 }
 
@@ -134,7 +138,7 @@ a, a:hover, a:focus, a:active{
         margin: 0;
         position: absolute;
         top: 50%;
-        animation: scrolling-text 12s linear infinite;
+        animation: scrolling-text1 10s linear infinite;
         white-space: nowrap;
     }
 
@@ -143,6 +147,18 @@ a, a:hover, a:focus, a:active{
         overflow: hidden;
         position: relative;
     }
+
+    @keyframes scrolling-text1 
+{
+    0%{
+        transform: translateX(100vw) translateY(-50%);
+    }
+    100%{
+        transform: translateX(-900px) translateY(-50%);
+        top: 50%;   
+    }
+    
+}
 
 
 }
@@ -153,7 +169,7 @@ a, a:hover, a:focus, a:active{
         transform: translateX(100vw) translateY(-50%);
     }
     100%{
-        transform: translateX(-100vw) translateY(-50%);
+        transform: translateX(-400px) translateY(-50%);
         top: 50%;   
     }
     
@@ -168,7 +184,7 @@ a, a:hover, a:focus, a:active{
 }
 
 .leilo-logo{
-    height:56px;
+    height:36px;
     
 }
 
@@ -258,15 +274,32 @@ a, a:hover, a:focus, a:active{
     width:50%;
 }
 
+@media(min-width: 800px) and (max-width:1025px){ 
+    .cans-advertisement{
+        padding-bottom: 3vw;
+    }
+}
+
+@media(min-width:1501px) and (max-width:1999px){
+    .cans-advertisement{
+        padding-bottom: 3.5vw;
+    }
+
+}
+
+@media(min-width:2000px){
+    .cans-advertisement{
+        padding-bottom: 4.5vw;
+    }
+
+}
+
+
 @media(min-width: 600px){ 
     .header-image-cans{
         position: absolute;
         bottom: 0;
         z-index: 0;
-    }
-
-    .cans-advertisement{
-        padding-bottom: 10vw;   
     }
 
     .cans-advertisement-overlay{
@@ -308,7 +341,11 @@ a, a:hover, a:focus, a:active{
 
 
 
-@media(max-width: 1500px) and (min-width:1026px){
+@media(min-width:1026px) and (max-width: 1500px){
+
+    .cans-advertisement{
+        padding-bottom: 7.5vw;
+    }
 
     .cans-advertisement-text{
         margin-top: 1em;
@@ -623,11 +660,17 @@ a, a:hover, a:focus, a:active{
 .publication-quote{
     min-height: 130px;
     height: 50%;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 700;
     font-family: Montserrat;
     
 }
+
+/* @media (min-width:500px){
+    .publication-quote{
+        font-size: 26px;
+    }
+} */
 
 .publication-quote-dash{
     font-size: 22px;
@@ -640,6 +683,13 @@ a, a:hover, a:focus, a:active{
     height: 150%;
 }
 
+@media(min-width:426px) and (max-width:799px){
+    .publication-logo-container{
+        height:30px;
+    }
+    
+}
+
 
 
 #publication-quotes-carousel-indicators-position{
@@ -648,34 +698,45 @@ a, a:hover, a:focus, a:active{
 
 .medium-logo{
     width: 70%;
+    max-width:150px;
 }
 
 .us-weekly-logo{
     width:25%;
+    max-width:100px;
 }
 
 .forbes-logo{
     width:50%;
+    max-width:100px;
 }
 
 
 @media (min-width:700px){
     .us-weekly-logo{
-        width:15%;
-        max-width: 250px;
+        width:8%;
+        max-width: 150px;
     }
 
     .medium-logo{
-        width: 40%;
-        max-width: 710px;
+        width: 20%;
+        max-width: 500px;
     }
     .forbes-logo{
-        width:30%;
-        max-width: 550px;
+        width:15%;
+        max-width: 400px;
     }
 }
 
-@media (min-width:1800px){
+@media (min-width:500px) and (max-width:1440px){
+    .publication-quote{
+        height: 50%;
+        font-size: 2vw;
+        padding-left: 25vw;
+        padding-right: 25vw;
+    }
+}
+@media (min-width:1441px){
     
     .publication-quote{
         height: 50%;
@@ -694,7 +755,7 @@ a, a:hover, a:focus, a:active{
 
 @media (min-width:1800px){
     .publication-logo-container{
-        height: 250px;
+        height: 175px;
     }
 
     
@@ -708,7 +769,7 @@ a, a:hover, a:focus, a:active{
 
 @media (max-width:1439px) and (min-width:800px){
     .publication-logo-container{
-        height: 130px;
+        height: 80px;
     }
 
    
@@ -955,11 +1016,59 @@ input[type=radio]:checked + .order-choice{
 
 
 /* testimonial section */
+@media(min-width:700px){
+    .testimonials-section{
+        margin-top:2vw;
+        margin-bottom:2vw;
+    }
+
+}
+
+
 .testimonial-image{
     width:120px;
     height: 120px;
     object-fit: cover;
 }
+
+.publication-quote1{
+    min-height: 170px;
+    height: 50%;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Montserrat;
+    color: #3DB8E9;
+    padding-bottom:40px;
+}
+
+@media(min-width:615px) and (max-width:1023px){
+    .publication-quote1{
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+}
+
+@media(min-width:1024px){
+    .publication-quote1{
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+}
+
+@media(min-width:1300px) and (max-width:1440px){
+    .publication-quote1{
+        font-size:22px;
+    }
+}
+
+@media(min-width:1441px){
+    .publication-quote1{
+        font-size:28px;
+    }
+}
+
+
+
 
 .testimonial-text{
     height: 170px;

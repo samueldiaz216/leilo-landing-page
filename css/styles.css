@@ -10,7 +10,13 @@ button, input, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+ 
 }
+
+ button:focus, [type="submit"]:focus {
+    outline: none;
+ }
+
 
 a, a:hover, a:focus, a:active{
     text-decoration: none;
@@ -799,7 +805,7 @@ input[type=radio]:checked + .order-choice{
 }
 
 
-#units{
+#pack-size{
     font-size: 8px;
 }
 
@@ -1216,6 +1222,30 @@ input[type=radio]:checked + .order-choice{
     }
 
 }
+
+
+/* checkout modal */
+.cart-item{
+    width:100px;
+}
+
+
+.modal-title-text{
+    font-weight: 600;
+}
+
+.modal-total-text{
+    font-weight: 600;
+}
+
+#checkout-button{
+    border-radius: 70px;
+    font-size: 26px;
+
+}
+
+
+
 
 
 /* Changing input placeholder text in different browsers */

@@ -13,6 +13,7 @@ const client = ShopifyBuy.buildClient({
 
 populateDropdown();
 
+
 if ($.cookie("checkoutId")) {
     var cartButton = document.getElementById("checkout-button");
 
@@ -179,8 +180,8 @@ function addToCart1() {
     var productId = document.getElementById("selected-product-id");
     var mq = window.matchMedia( "(max-width: 45em)" );
     if (mq.matches) {
-        quantityField = document.getElementById("quantity-mobile");
-        productId = document.getElementById("selected-product-id-mobile");
+        quantityField = document.getElementById("quantity");
+        productId = document.getElementById("selected-product-id");
     }
 
     const lineItemsToAdd = [
@@ -215,8 +216,9 @@ function populateDropdown() {
         var mq = window.matchMedia( "(max-width: 45em)" );
         var flavor = document.getElementById("flavor-name").innerHTML;
         
+        
         if (mq.matches) {
-            flavor = document.getElementById("flavor-name-mobile").innerHTML;
+            flavor = document.getElementById("flavor-name-mobile").value;
         }
         if (flavor == "lemon ginger") {
             handle = "leilo";
@@ -248,8 +250,10 @@ function populateDropdown() {
             var select = document.getElementById("pack-size");
             var idField = document.getElementById("selected-product-id")
             if (mq.matches) {
-                var select = document.getElementById("pack-size-mobile");
-                var idField = document.getElementById("selected-product-id-mobile")
+                // var select = document.getElementById("pack-size-mobile");
+                // var idField = document.getElementById("selected-product-id-mobile")
+                var select = document.getElementById("pack-size");
+                var idField = document.getElementById("selected-product-id")
             }
             for (var i = 0; i < variantsList.length; i++) {
                 var opt = document.createElement("option");
@@ -260,7 +264,8 @@ function populateDropdown() {
             
             var price = document.getElementById('price');
             if (mq.matches) {
-                price = document.getElementById('price-mobile');
+                // price = document.getElementById('price-mobile');
+                price = document.getElementById('price');
             }
             price.innerHTML = "$" + Math.floor(variantsList[0].price * ((100 - discount))) / 100;
 
@@ -296,7 +301,8 @@ function populateDropdown() {
                     perCan = document.getElementById('per-can');
                 }; 
                 if (mq.matches) {
-                    price = document.getElementById('price-mobile');
+                    // price = document.getElementById('price-mobile');
+                    price = document.getElementById('price');
                     if (document.getElementById('per-can-mobile')){
                         perCan = document.getElementById('per-can-mobile');
                     }; 
@@ -320,8 +326,6 @@ function populateDropdown() {
         });
     });
 }
-
-
 
 
 

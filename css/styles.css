@@ -96,31 +96,83 @@ a, a:hover, a:focus, a:active{
     height: 33px;
     overflow: hidden;
     position: relative;
+    width:200%;
 }
 
-.scrolling-banner p{
-    font-weight: 600;
-    font-size: 14px;
+.scrolling-banner-text{
+    animation: scrolling-text 12s linear infinite;
+    position:relative;
     color: #57C3EE;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    animation: scrolling-text 6s linear infinite;
-    white-space: nowrap;
+    
 }
+
+.large-screen-p{
+    display: inline-block;
+}
+@media (min-width:901px){
+    .scrolling-banner-text{
+        margin-right: 2em;
+        top:25%;
+        
+    }
+}
+
+@media (max-width:900px){
+    .scrolling-banner-text{
+        margin-right: 2em;
+        top:25%;
+        
+    }
+    .scrolling-banner-text p{
+        margin-right: 2em;
+    }
+
+    .large-screen-p{
+        display: none;
+    }
+}
+
+@media (min-width:331px) and (max-width:475px){
+    .scrolling-banner-text{
+        font-size:12px;
+        margin-right:.5em;
+        top:20%;
+    }
+}
+
+@media (max-width:330px){
+    .scrolling-banner-text{
+        font-size:11px;
+        margin-right:.5em;
+        top:20%;
+    }
+}
+
+@media (max-width:310px){
+    .scrolling-banner-text{
+        font-size:9px;
+        margin-right:.5em;
+        top:20%;
+    }
+}
+
+
+.scrolling-banner-container{
+    width:100%;
+    overflow: hidden;
+}
+
+
+@keyframes scrolling-text 
+{
+    
+    0%   { transform: translateX(0%); }
+	100% { transform: translateX(-100%); }
+}
+    
 
 
 @media(min-width: 1440px){
-    .scrolling-banner p{
-        font-weight: 600;
-        font-size: 100%;
-        color: #57C3EE;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        animation: scrolling-text 8s linear infinite;
-        white-space: nowrap;
-    }
 
     .scrolling-banner{
         height: 35px;
@@ -128,19 +180,14 @@ a, a:hover, a:focus, a:active{
         position: relative;
     }
 
+    .scrolling-banner-text{
+        font-size: 18px;
+    }
+    
+
 }
 
 @media(min-width: 2000px){
-    .scrolling-banner p{
-        font-weight: 600;
-        font-size: 200%;
-        color: #57C3EE;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        animation: scrolling-text1 10s linear infinite;
-        white-space: nowrap;
-    }
 
     .scrolling-banner{
         height: 70px;
@@ -148,32 +195,15 @@ a, a:hover, a:focus, a:active{
         position: relative;
     }
 
-    @keyframes scrolling-text1 
-{
-    0%{
-        transform: translateX(100vw) translateY(-50%);
+    .scrolling-banner-text{
+        top:10%;
+        font-size: 32px;
     }
-    100%{
-        transform: translateX(-900px) translateY(-50%);
-        top: 50%;   
-    }
-    
-}
 
 
 }
 
-@keyframes scrolling-text 
-{
-    0%{
-        transform: translateX(100vw) translateY(-50%);
-    }
-    100%{
-        transform: translateX(-400px) translateY(-50%);
-        top: 50%;   
-    }
-    
-}
+
 /* banner section */
 
 
@@ -825,7 +855,10 @@ a, a:hover, a:focus, a:active{
 
 
 /* variety pack section */
-
+#price-subtitle{
+    font-size: 8px;
+    font-weight: 400;
+}
 
 .variety-pack-content1{
     color: #57C3EE;

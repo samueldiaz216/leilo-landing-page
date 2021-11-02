@@ -11,32 +11,32 @@ const client = ShopifyBuy.buildClient({
     storefrontAccessToken: storefrontAccessToken,
 });
 
-populateDropdown();
+populateDropdown1();
 
 
 if ($.cookie("checkoutId")) {
     var cartButton = document.getElementById("checkout-button");
 
     client.checkout.fetch($.cookie("checkoutId")).then((checkout) => {
-        cartButton.onclick = function(){forwardToCheckout()};
-        populateCart(checkout); 
+        cartButton.onclick = function(){forwardToCheckout1()};
+        populateCart1(checkout); 
     });
 } else {
     client.checkout.create().then((checkout) => {
         $.cookie("checkoutId", checkout.id, {expires: 1}); // expires in 1 day
         var cartButton = document.getElementById("checkout-button");
-        cartButton.onclick = function(){forwardToCheckout()};
+        cartButton.onclick = function(){forwardToCheckout1()};
     });
 }
 
-function forwardToCheckout() {
+function forwardToCheckout1() {
     client.checkout.fetch($.cookie("checkoutId")).then((checkout) => {
         window.location.href = checkout.webUrl;
     });
 }
 
 
-function populateCart(checkout) {
+function populateCart1(checkout) {
     var modalBody = document.getElementById("modal-body");
     modalBody.innerHTML = "";
     var discount = 0;
@@ -75,22 +75,23 @@ function populateCart(checkout) {
             }
         }
 
-        var card='<div class="card flex-row flex-wrap justify-content-between align-items-center">\
+        var card='<div class="card flex-row flex-wrap">\
             <div class="card-header border-0">\
                 <img class="cart-item" src="' + imagePath + '">\
             </div>\
             <div class="card-block px-2">\
-                <p class="cart-title">' + title + '</p>\
-                <p class="cart-size">' + lineItem.variant.title + '</p>\
-                <p class="cart-price">$' + Math.floor(lineItem.variant.price * ((100 - discount))) / 100 + ' each</p>\
+                <h4 class="cart-title">' + title + '</h4>\
+                <h4 class="cart-size">' + lineItem.variant.title + '</h4>\
+                <h4 class="cart-price">$' + Math.floor(lineItem.variant.price * ((100 - discount))) / 100 + ' each</h4>\
             </div>\
-            <div id="cart-quantity-card" class="card-block px-2 flex-row">\
+            <div id="cart-quantity-card" class="card-block px-2">\
                 <a id="qty-minus-' + i + '">-</a>\
                 <h4 class="cart-quantity">' + lineItem.quantity +'</h4>\
                 <a id="qty-plus-' + i + '">+</a>\
             </div>\
         </div>';
         modalBody.innerHTML += card;
+
     }
 
     for (i = 0; i < checkout.lineItems.length; i++) {
@@ -105,7 +106,7 @@ function populateCart(checkout) {
                 ];
 
                 client.checkout.addLineItems($.cookie("checkoutId"), lineItemsToAdd).then((checkout) => {
-                    populateCart(checkout);
+                    populateCart1(checkout);
                 }); 
             };
         }
@@ -116,7 +117,7 @@ function populateCart(checkout) {
                     const lineItemsToRemove = [lineItem.id];
 
                     client.checkout.removeLineItems($.cookie("checkoutId"), lineItemsToRemove).then((checkout) => {
-                        populateCart(checkout);
+                        populateCart1(checkout);
                     });
                 }
                 
@@ -129,7 +130,7 @@ function populateCart(checkout) {
                     ];
 
                     client.checkout.updateLineItems($.cookie("checkoutId"), lineItemsToUpdate).then((checkout) => {
-                        populateCart(checkout);
+                        populateCart1(checkout);
                     });
                 } 
             };
@@ -198,14 +199,14 @@ function addToCart1() {
             cartButton = document.getElementById("checkout-button");
         }
         cartButton.href = checkout.webUrl;
-        populateCart(checkout);
+        populateCart1(checkout);
     });
 }
 
 
 
 
-function populateDropdown() {
+function populateDropdown1() {
     client.checkout.fetch($.cookie("checkoutId")).then((checkout) => {
         var discount = 0;
         if (checkout.discountApplications.length > 0) {
@@ -218,7 +219,7 @@ function populateDropdown() {
         
         
         if (mq.matches) {
-            flavor = document.getElementById("flavor-name-mobile").value;
+            flavor = document.getElementById("flavor-name").innerHTML;
         }
         if (flavor == "lemon ginger") {
             handle = "leilo";

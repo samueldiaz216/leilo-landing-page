@@ -16,8 +16,22 @@
 </head>
 <body>
 
-    <div class="scrolling-banner bg-white">
-        <p>use code SUNSET for 10% off today + free shipping.</p>
+    <!-- <div class="scrolling-banner bg-white">
+        <p class="promo1">use code SUNSET for 10% off today + free shipping.</p>
+        <p class="promo2">use code SUNSET for 10% off today + free shipping.</p>
+        <p class="promo3">use code SUNSET for 10% off today + free shipping.</p>
+    </div> -->
+    <div class="scrolling-banner-container">
+        <div class="scrolling-banner bg-white d-flex align-items-center">
+            <div class="d-flex w-50 justify-content-around align-items-center scrolling-banner-text">
+                <p >use code SUNSET for 10% off today + free shipping.</p>
+                <p class="large-screen-p">use code SUNSET for 10% off today + free shipping.</p>
+            </div>
+            <div class="d-flex w-50 justify-content-around align-items-center scrolling-banner-text">
+                <p >use code SUNSET for 10% off today + free shipping.</p>
+                <p class="large-screen-p">use code SUNSET for 10% off today + free shipping.</p>
+            </div>
+        </div>
     </div>
 
     <div class="header-logo text-center py-2">
@@ -185,7 +199,6 @@
 
 
             <div class="variety-pack-content1 text-center bg-white mt-0 pt-5 pb-4 px-3">
-                <input id="flavor-name-mobile" type="hidden" value="sunset variety">
                 <h1 id="flavor-name" class="mb-4">sunset variety</h1> 
                     <div class="d-flex justify-content-center align-items-center mb-4">
                         <img class="star" src="images/star.png" alt="">
@@ -215,7 +228,10 @@
                     <label for="2" class="order-choice mb-2">
                         <div class="variety-pack-content-input subscribe d-flex justify-content-between align-items-center px-2">
                             <p>subscribe and save</p>
-                            <p>$45/month</p>
+                            <div class="d-flex flex-column ">
+                                <p id="price-subtitle">starting at</p>
+                                <p>$45/month</p>
+                            </div>
                         </div>
                     </label>
                     <input type="number" class="d-none" id="quantity" name="numberOfCases" value="1" min="0">

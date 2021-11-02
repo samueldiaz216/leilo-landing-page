@@ -119,6 +119,7 @@ a, a:hover, a:focus, a:active{
 
 @media (max-width:900px){
     .scrolling-banner-text{
+        animation: scrolling-text 8s linear infinite;
         margin-right: 2em;
         top:25%;
         

@@ -75,18 +75,19 @@ function populateCart1(checkout) {
             }
         }
 
-        var card='<div class="card flex-row flex-wrap">\
+        var card='<div class="product-card card d-flex flex-wrap align-items-center">\
             <div class="card-header border-0">\
                 <img class="cart-item" src="' + imagePath + '">\
             </div>\
-            <div class="card-block px-2">\
-                <h4 class="cart-title">' + title + '</h4>\
-                <h4 class="cart-size">' + lineItem.variant.title + '</h4>\
-                <h4 class="cart-price">$' + Math.floor(lineItem.variant.price * ((100 - discount))) / 100 + ' each</h4>\
+            <div class="product-card-info card-block px-2 d-flex flex-column">\
+                <p class="cart-title m-0">' + title + '</p>\
+                <p class="cart-size m-0">' + lineItem.variant.title + '</p>\
+                <p class="cart-price m-0">$' + Math.floor(lineItem.variant.price * ((100 - discount))) / 100 + '</p>\
+                <p class="cart-price m-0">each</p>\
             </div>\
-            <div id="cart-quantity-card" class="card-block px-2">\
+            <div id="cart-quantity-card" class="card-block px-4 d-flex">\
                 <a id="qty-minus-' + i + '">-</a>\
-                <h4 class="cart-quantity">' + lineItem.quantity +'</h4>\
+                <h5 class="cart-quantity ml-3 mr-3">' + lineItem.quantity +'</h5>\
                 <a id="qty-plus-' + i + '">+</a>\
             </div>\
         </div>';
@@ -369,7 +370,7 @@ addSubscriptionToCartButtonHTML="<a href='https://withfriends.co/Leilo/join?utm_
 
 
 oneTimeOrderRadioButton.addEventListener("click",()=>{
-    counter.classList.toggle("active");
+    counter.classList.add("active");
     numberOfCasesValue=1;
     casesIndicator.innerText="1 case";
     buyVarietyPackForm.removeChild(addSubscriptionToCartAnchorTag);
@@ -380,7 +381,7 @@ oneTimeOrderRadioButton.addEventListener("click",()=>{
 })
 
 subscribeRadioButton.addEventListener("click",()=>{
-    counter.classList.toggle("active");
+    counter.classList.remove("active");
     numberOfCasesValue=0;
     casesIndicator.innerText=numberOfCasesValue+" cases";
     buyVarietyPackForm.removeChild(selectProductIdInput);

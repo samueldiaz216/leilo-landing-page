@@ -6,15 +6,15 @@ var footerHTML ='<div class="row">\
         <p class="copyright">Made in NYC<br>© Leilo 2020</p>\
     </div>\
     <div class="links">\
-        <a href="https://www.leilo.com/lemon" class="footer">shop</a>\
-        <a href="https://www.leilo.com/story" class="footer">our story</a>\
-        <a href="https://www.leilo.com/merchcollection" class="footer">merch</a>\
-        <a href="https://www.leilo.com/membership" class="footer">membership</a>\
-        <a href="https://www.leilo.com/contact" class="footer">contact us</a>\
-        <a href="https://www.leilo.com/wholesale" class="footer">wholesale</a>\
-        <a href="https://www.leilo.com/faq" class="footer">faq</a>\
-        <a href="https://www.leilo.com/privacy" class="footer">privacy policy</a>\
-        <a href="https://www.leilo.com/terms" class="footer">terms & conditions</a>\
+        <a href="lemon" class="footer">shop</a>\
+        <a href="story" class="footer">our story</a>\
+        <a href="merchcollection" class="footer">merch</a>\
+        <a href="membership" class="footer">membership</a>\
+        <a href="contact" class="footer">contact us</a>\
+        <a href="wholesale" class="footer">wholesale</a>\
+        <a href="faq" class="footer">faq</a>\
+        <a href="privacy" class="footer">privacy policy</a>\
+        <a href="terms" class="footer">terms & conditions</a>\
     </div>\
     <div class="disclaimer">\
         <p class="disclaimer-text">The information and statements on our site have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>\
@@ -28,3 +28,4 @@ var footerHTML ='<div class="row">\
 </div>';
 
 footer.innerHTML = footerHTML;
+

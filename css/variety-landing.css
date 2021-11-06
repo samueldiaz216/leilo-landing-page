@@ -952,6 +952,12 @@ input[type=radio]:checked + .order-choice{
 
 #pack-size{
     font-size: 8px;
+    font-weight: 400;
+}
+
+#pack-size-mobile{
+    font-size: 8px;
+    font-weight: 400;
 }
 
 .variety-pack-content-input button{
@@ -1436,7 +1442,7 @@ input[type=radio]:checked + .order-choice{
 
 
 /* checkout modal */
-.cart-item{
+/* .cart-item{
     width:100px;
 }
 
@@ -1486,7 +1492,8 @@ input[type=radio]:checked + .order-choice{
     }
 
 
-}
+} */
+
 
 
 

@@ -503,26 +503,10 @@ a, a:hover, a:focus, a:active{
 }
 
 .ingredient-image{
-    width:65%;
+    width:75%;
     min-width: 40px;
 }
 
-.l-theanine-image{
-    width:50%;
-    min-width: 30px;
-}
-
-@media (min-width:770px){
-    .ingredient-image{
-        width:47%;
-        max-width:290px;
-    }
-    
-    .l-theanine-image{
-        width:37%;
-        max-width:240px;
-    }
-}
 
 .whats-inside-button{
     width:17vw;
@@ -856,6 +840,23 @@ a, a:hover, a:focus, a:active{
 
 
 /* variety pack section */
+.var-pack-content{
+    height: 90vh;
+    position: relative;
+}
+
+
+
+
+
+.vertical-center-container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 #price-subtitle{
     font-size: 8px;
     font-weight: 400;

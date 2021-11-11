@@ -81,6 +81,8 @@ oneTimeOrderRadioButton.addEventListener("click",()=>{
     counter.classList.add("active");
     numberOfCasesValue=1;
     numberOfCasesMobileValue=1;
+    numberOfCases.setAttribute("value",numberOfCasesValue);
+    numberOfCasesMobile.setAttribute("value",numberOfCasesValue);
     casesIndicator.innerText="1 case";
     buyVarietyPackForm.removeChild(addSubscriptionToCartAnchorTag);
     buyVarietyPackForm.removeChild(subscriptionScript);
@@ -94,6 +96,8 @@ subscribeRadioButton.addEventListener("click",()=>{
     counter.classList.remove("active");
     numberOfCasesValue=0;
     numberOfCasesMobileValue=0;
+    numberOfCases.setAttribute("value",numberOfCasesValue);
+    numberOfCasesMobile.setAttribute("value",numberOfCasesValue);
     casesIndicator.innerText=numberOfCasesValue+" cases";
     buyVarietyPackForm.removeChild(selectProductIdInput);
     buyVarietyPackForm.removeChild(selectProductIdInputMobile);

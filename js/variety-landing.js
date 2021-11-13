@@ -9,7 +9,8 @@ incrementCases=document.querySelector(".increment-cases");
 subscribeRadioButton=document.querySelector(".subscribe");
 oneTimeOrderRadioButton=document.querySelector(".one-time-order");
 counter=document.querySelector(".variety-pack-content-counter");
-buyVarietyPackForm=document.querySelector(".variety-pack-content1 form");
+// buyVarietyPackForm=document.querySelector(".variety-pack-content1 form");
+buyVarietyPackForm=document.querySelector(".variety-pack-content-test form");
 
 
 var mq = window.matchMedia( "(max-width: 45em)" );
@@ -17,7 +18,10 @@ var mq = window.matchMedia( "(max-width: 45em)" );
 
 addToCartButton=document.createElement("button");
 
-addToCartButton.classList.add("add-to-cart-button");
+// addToCartButton.classList.add("add-to-cart-button");
+// addToCartButton.classList.add("leilo-button-blue");
+addToCartButton.classList.add("form-button-test");
+addToCartButton.classList.add("add-to-cart-text");
 addToCartButton.classList.add("leilo-button-blue");
 addToCartButton.setAttribute("id","add-to-cart");
 if(mq.matches) {
@@ -59,10 +63,18 @@ buyVarietyPackForm.appendChild(checkoutIdInput);
 
 addSubscriptionToCartAnchorTag=document.createElement("a");
 addSubscriptionToCartAnchorTag.setAttribute("href","https://withfriends.co/Leilo/join?utm_campaign=wf-websitelink");
+addSubscriptionToCartAnchorTag.classList.add("form-button-test");
+addSubscriptionToCartAnchorTag.classList.add("add-to-cart-text");
+addSubscriptionToCartAnchorTag.classList.add("leilo-button-blue");
+addSubscriptionToCartAnchorTag.classList.add("d-flex");
+addSubscriptionToCartAnchorTag.classList.add("flex-column");
+addSubscriptionToCartAnchorTag.classList.add("justify-space-around");
+addSubscriptionToCartAnchorTag.classList.add("text-center");
+
+
 subAddToCartButton=document.createElement("button");
 
-subAddToCartButton.classList.add("add-to-cart-button");
-subAddToCartButton.classList.add("leilo-button-blue");
+
 subAddToCartButton.innerText="add to cart";
 addSubscriptionToCartAnchorTag.appendChild(subAddToCartButton);
 
@@ -71,8 +83,6 @@ subscriptionScript.setAttribute("type", "text/javascript");
 subscriptionScript.setAttribute("src", "https://danjg53usxhfc.cloudfront.net/api/wf-embed-btn.js?b=Leilo");
 
 
-
-addSubscriptionToCartButtonHTML="<a href='https://withfriends.co/Leilo/join?utm_campaign=wf-websitelink'>"+addToCartButton+"</a><script type='text/javascript' src='https://danjg53usxhfc.cloudfront.net/api/wf-embed-btn.js?b=Leilo'></script>";
 
 
 
@@ -159,7 +169,15 @@ if(window.innerWidth>1440){
     makeCartBig();
 }
 
+// var starGroup=document.getElementById("star-group");
+// var lastStarCropper=document.getElementById("last-star-cropper");
+// lastStarCropper.style.width=`${((starGroup.offsetWidth/10)*9.5)}px`;
+// lastStarCropper.style.marginRight=`${((starGroup.offsetWidth/10)*.5)}px`;
+
+
+
 window.addEventListener('resize',()=>{
+    
 
     if(mq.matches){
         addToCartButton.setAttribute("id","add-to-cart-mobile");
@@ -186,3 +204,8 @@ function makeCartSmall(){
     cart.setAttribute("width","36");
     cart.setAttribute("height","36");
 }
+
+
+
+
+

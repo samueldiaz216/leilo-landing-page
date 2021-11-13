@@ -129,8 +129,8 @@
               <li id="slide-indicator" data-target="#publication-quotes-carousel" data-slide-to="1"></li>
               <li id="slide-indicator" data-target="#publication-quotes-carousel" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner p-5">
-                <div class="carousel-item active text-center text-white">
+            <div class="carousel-inner p-5 smooth-transition">
+                <div class="carousel-item active text-center text-white smooth-transition">
                   <div class="h1 publication-quote d-flex flex-column justify-content-center">
                       "Leilo was made for anyone who wants to relax, whenever and for whatever reason."
                   </div>
@@ -139,7 +139,7 @@
                       <a target="_blank" href="https://www.forbes.com/sites/chelseadavis/2021/08/13/say-hello-to-leilo-the-markets-only--ready-to-drink-kava-beverage/?sh=1f0744211c6d"><img class="forbes-logo" src="images/forbes-logo-white-removebg-preview.png" alt=""></a>
                   </div>
                 </div>
-                <div class="carousel-item text-center text-white">
+                <div class="carousel-item text-center text-white smooth-transition">
    
                   <div class="h1 publication-quote d-flex flex-column justify-content-center">
                       "Leilo provides clear-headed relief from daily stressors with kava and l-theanine."
@@ -150,7 +150,7 @@
                       <img class="us-weekly-logo" src="images/USWeekly.png" alt="">
                   </div>
                 </div>
-                <div class="carousel-item text-center text-white">
+                <div class="carousel-item text-center text-white smooth-transition">
                   <div class="h1 publication-quote d-flex flex-column justify-content-center">
                       "calm is the key to unlocking our full potential, and Leilo is making sure it’s only a can away."
                   </div>
@@ -168,10 +168,108 @@
 
     <div class="baby-blue-container d-flex flex-column align-items-center px-3 pt-3 pb-5">
 
+    
+        <div class="variety-pack-container1 my-5">
+            <div id="variety-pack-carousel1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators" id="variety-pack-carousel-indicators-positon">
+                <li id="slide-indicator" data-target="#variety-pack-carousel1" data-slide-to="0" class="active"></li>
+                <li id="slide-indicator" data-target="#variety-pack-carousel1" data-slide-to="1"></li>
+                <li id="slide-indicator" data-target="#variety-pack-carousel1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner w-100 ">
+                    <div class="carousel-item active variety-pack-image-container1">
+                        <img class="variety-pack-image1" src="images/carouselCans.png" alt="">
+                    </div>
+                    <div class="carousel-item variety-pack-image-container1">
+                        <img class="variety-pack-image1 " src="images/cans.png" alt="">
+                    </div>
+                    <div class="carousel-item variety-pack-image-container1 text-center">
+                        <img class="variety-pack-image2" src="images/horizontal-supfacts-02.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class=" variety-pack-content-test text-center bg-white mt-0 pb-4 px-3">
+                <div>
+                <h1 id="flavor-name" class="mb-4">sunset variety</h1> 
+                <h1 id="flavor-name-mobile" class="mb-4 d-none">sunset variety</h1>
+                    <div class="d-flex justify-content-center align-items-end mb-4">
+                        <div id="last-star-cropper" class="last-star-container-test">
+                            <div id="star-group" class="d-flex">
+                                <img class="star-test" src="images/star.png" alt="">
+                                <img class="star-test" src="images/star.png" alt="">
+                                <img class="star-test" src="images/star.png" alt="">
+                                <img class="star-test" src="images/star.png" alt="">
+                                <img class="star-test" src="images/star.png" alt="">
+                            </div>
+                        </div>
+                        <p class="reviews-text-test mb-0">89 reviews</p>
+                        
+                    </div>
+
+                <p class="variety-pack-text-test">
+                    our four classic flavors, all in one pack!
+                    raspberry hibiscus, lemon ginger, 
+                    blackberry orange, and tango berry.
+                </p>
+                <form class="d-flex flex-column align-items-center">
+                    <input type="radio" name="order" id="1" class="d-none" checked="checked" value="49.99">
+                    <label class="form-button-test form-button-text-test order-choice d-flex flex-column justify-content-around px-3" for="1">
+                        <div class="one-time-order d-flex justify-content-between">
+                            <p class="mb-0">one-time-order</p>
+                            <p id="price" class="mb-0">$49.99</p>
+                            <p id="price-mobile" class="d-none">$49.99</p>
+                        </div>
+                    </label>
+                    <input type="radio" name="order" id="2" class="d-none" value="30.59">
+                    <label class="form-button-test form-button-text-test order-choice px-3 d-flex flex-column justify-content-around" for="2">
+                        <div class="subscribe d-flex justify-content-between align-items-center ">
+                            <p class="mb-0">subscribe and save</p>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="mb-0 starting-at-test">starting at</p>
+                                <p class="mb-0">$45/month</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="number" class="d-none" id="quantity" name="numberOfCases" value="1" min="0">
+                    <input type="number" class="d-none" id="quantity-mobile" name="numberOfCases" value="1" min="0">
+                    <label class="variety-pack-content-counter active form-button-test form-button-text-test px-3 d-flex flex-column justify-content-around" for="number-of-cases">
+                        <div class="d-flex justify-content-between align-items-center" >
+                            <button class="decrement-cases">-</button>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <p class="cases mb-0">1 case</p>
+                                <input id="pack-size" value="12-pack" class="pack-size-test"></input>
+                                <input id="pack-size-mobile" type="hidden" value="12-pack"></input>
+                                <p id="per-can" class="d-none"></p>
+                                <p id="per-can-mobile" class="d-none"></p>
+                            </div>
+                            <button class="increment-cases">+</button>
+                        </div>
+                    </label>
+
+                
+
+                    
+                    
+
+                    
+                    
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="baby-blue-container d-flex flex-column align-items-center px-3 pt-3 pb-5">
+
+        
+
         
 
 
-        <div class="variety-pack-container1 my-5">
+        <!-- <div class="variety-pack-container1 my-5">
             <div id="variety-pack-carousel1" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators" id="variety-pack-carousel-indicators-positon">
                   <li id="slide-indicator" data-target="#variety-pack-carousel1" data-slide-to="0" class="active"></li>
@@ -205,7 +303,7 @@
                         <div class="last-star-container">
                             <img class="star" src="images/star.png" alt="">
                         </div>
-                        <p class="reviews-text">89 reviews</p>
+                        <p>89 reviews</p>
                     </div>
 
                 <p id="variety-pack-text" class="mb-4 px-2">
@@ -258,7 +356,8 @@
                 </form>
             </div>
 
-        </div>
+        </div> -->
+
         
 
         <div class="testimonials-section text-center py-5">
@@ -339,10 +438,6 @@
     </div>
 
     <div class="container-fluid" id="footer" style="background-image: url('images/footer.png'),linear-gradient(#57C3EE, #FFFFFF)"></div>  
-
-   
-
-        
 
 
 
